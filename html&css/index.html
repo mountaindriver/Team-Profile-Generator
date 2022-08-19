@@ -1,7 +1,4 @@
-const generateTeamProfile = function(data){
-
-    return `
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,19 +11,16 @@ const generateTeamProfile = function(data){
     <header class="">
         <h1 class="text-white bg-danger text-center">My Team</h1>
     </header>
-    ${generateEmployeeCards(data)}
-    
+    <div class="card">
+        <div class="card-header">
+            Name: 
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">Position: </h4>
+            <p class="card-text">ID: </p>
+            <p class="card-text">Email: </p>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
-    
-    `
-}
-
-const generateEmployeeCards = function(data){
-
-
-    
-}
-
-module.exports = generateTeamProfile;
