@@ -3,20 +3,18 @@ const inquirer = require('inquirer');
 inquirer.registerPrompt("loop", require("inquirer-loop")(inquirer))
 const fs = require('fs');
 // Other js files
-const Manager = require('./manager');
-const Engineer = require('./engineer');
-const Intern = require('./intern');
-const generateTeamProfile = require('./utils/generateTeamProfile.js');
-
-let employees = [];
+const Manager = require('./lib/manager');
+const Engineer = require('./lib/engineer');
+const Intern = require('./lib/intern');
+const generateTeamProfile = require('./src/generateTeamProfile.js');
 
 
+// prompt questions
 const questions = [
     {
         type: 'input',
         message: `What is the manager's name?`,
         name: `name`,
-
     },
     {
         type: 'input',
@@ -78,7 +76,7 @@ const questions = [
 inquirer
     .prompt(questions)
     .then((data) => {
-        console.log(data);
+        
         const employees = data.employees;
         const manager = [];
         const engineer = [];
@@ -98,14 +96,6 @@ inquirer
                 intern.push(createIntern); 
             }
         }
-        console.log("---------------");
-        console.log(data);
-        console.log("---------------");
-        console.log(manager)        
-        console.log("---------------");
-        console.log(engineer)
-        console.log("---------------");
-        console.log(intern)
 
         fs.writeFileSync("Team-Member-Dashboard.html", generateTeamProfile(data))
     })
