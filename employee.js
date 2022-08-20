@@ -5,20 +5,16 @@ class Employee {
         this.email = email;
     }
 
-    greetEmployee(name, id, email) {
-        console.log(`Hello, ${this.name} is the following infomation correct? Id: ${this.id}, Email: ${this.email}`)
+    getName() {
+        return this.name
     }
 
-    getName(name) {
-        console.log(name);
+    getId() {
+        return this.id
     }
 
-    getId(id) {
-        console.log(id);
-    }
-
-    getEmail(email) {
-        console.log(email)
+    getEmail() {
+        return this.email
     }
 
     getrole() {
