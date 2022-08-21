@@ -11,11 +11,6 @@
       <a href="https://github.com/mountaindriver/Team-Profile-Generator"><strong>Explore the docs »</strong></a>
       <br />
       <br />
-      <a href="https://github.com/mountaindriver/Team-Profile-Generator">View Demo</a>
-      <!-- · -->
-      <!-- <a href="https://github.com/mountaindriver/Team-Profile-Generator/issues">Report Bug</a>
-      ·
-      <a href="https://github.com/mountaindriver/Team-Profile-Generator/issues">Request Feature</a> -->
     </p>
   </div>
   
@@ -33,6 +28,12 @@
       <li><a href='#questions'>Questions</a></li>
     </ol>
   </details>
+
+
+
+  ## License
+
+  None
   
   ## Description
   
