@@ -19,7 +19,7 @@ const questions = [
     {
         type: 'input',
         message: `What is the manager's employee ID?`,
-        name: `id`
+        name: `id`,
     },
     {
         type: 'input',
@@ -40,7 +40,7 @@ const questions = [
                 type: 'list',
                 message: 'Engineer or intern?',
                 name: 'type',
-                choices: ['Engineer', 'Intern']
+                choices: ['Engineer', 'Intern'],
             },
             {
                 type: 'input',
@@ -61,13 +61,13 @@ const questions = [
                 type: 'input',
                 message: "What is the employee's github username?",
                 name: 'github',
-                when: (employee) => employee.type === 'Engineer'
+                when: (employee) => employee.type === 'Engineer',
             },
             {
                 type: 'input',
                 message: 'What is the name of the employees school?',
                 name: 'school',
-                when: (employee) => employee.type === 'Intern'
+                when: (employee) => employee.type === 'Intern',
             },
         ]
     }
@@ -76,27 +76,27 @@ const questions = [
 inquirer
     .prompt(questions)
     .then((data) => {
-        
+        console.log(data);
         const employees = data.employees;
         const manager = [];
         const engineer = [];
         const intern = [];
 
-        const createManager = new Manager(data.name, data.id, data.email, data.officeNumber)
-        manager.push(createManager)
+        const createManager = new Manager(data.name, data.id, data.email, data.officeNumber);
+        manager.push(createManager);
         
 
         for(let i = 0; i <employees.length; i++){
             const a = employees[i]
             if (a.type === "Engineer"){
-                const createEngineer = new Engineer(data.name, data.id, data.email, data.github);
+                const createEngineer = new Engineer(a.name, a.id, a.email, a.github);
                 engineer.push(createEngineer);
             } else if (a.type === "Intern"){
-                const createIntern = new Intern(data.name, data.id, data.email, data.school);
+                const createIntern = new Intern(a.name, a.id, a.email, a.school);
                 intern.push(createIntern); 
             }
         }
-
-        fs.writeFileSync("Team-Member-Dashboard.html", generateTeamProfile(data))
+        
+        fs.writeFileSync(`./dist/${data.name}'sTeam-Member-Dashboard.html`, generateTeamProfile(manager, engineer, intern));
+        console.log(`New File ${data.name}'sTeam-Member-Dashboard.html has been created in the dist file`);
     })
-
