@@ -39,7 +39,7 @@
   
   ## Description
   
-  Build a Ojeect-Oriented Programming application with Node.js that prompts user for information  about a development team to create a webpage that displays summaries for each person.
+  This is a Ojeect-Oriented Programming application with Node.js that prompts user for information  about a development team to create a webpage that displays summaries for each person.
   
   <p align="right">(<a href="#readme-top">back to top</a>)</p>
   
