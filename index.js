@@ -11,19 +11,6 @@ const generateTeamProfile = require('./src/generateTeamProfile.js');
 
 // prompt questions
 const questions = [
-    {type: 'list',
-    message: 'Hello, what would you like to do?',
-    name: 'action',
-    choices: [
-        `View All Employees`,
-        `Add An Employee`,
-        `Update An Employee Role`,
-        `View All Roles`,
-        `Add A Role`,
-        `View all Departments`,
-        `Add A Department`,
-        `Quit`],
-    },
     {
         type: 'input',
         message: `What is the manager's name?`,
