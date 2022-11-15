@@ -30,10 +30,12 @@
     </ol>
   </details>
 
+  ![Team-Profile-Generator](img\screencapture-127-0-0-1-5500-dist-Example-Boss-sTeam-Member-Dashboard-html-2022-11-04-14_10_34.png)
+
   
   ## Description
   
-  This is a Object-Oriented Programming application with Node.js that prompts user for information about a development team to create a webpage that displays summaries for each person contact info and role on the team.  
+ This is a Node CLI(command line interface) that prompts user for information about a development team and will then generate a website with the provided data.
   
   <p align="right">(<a href="#readme-top">back to top</a>)</p>
   
@@ -50,17 +52,16 @@
   <p align="right">(<a href="#readme-top">back to top</a>)</p>
   
   
-  
   ## Contributing
   
-  Lucas Freigenberg created the CLI using Inquirer and Javascript.
+  Lucas Freigenberg-Full Stack Developer
   
   <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+  
   
   ## Questions
   
   If you have any question please feel free to reach me at eithr my at me Linkedin, Github, or Email.
-  <p align="left">Linkedin: <a href="#https://www.linkedin.com/in/lucas-freigenberg-539338134/">lucas-freigenberg-539338134/</a></p>
+  <p align="left">Linkedin: <a href="#https://www.linkedin.com/in/lucas-freigenberg-539338134/">lucas-freigenberg</a></p>
   <p align="left">Github: <a href="#https://github.com/mountaindriver">mountaindriver</a></p>
   <p align="left">Email: <a href="#Lsfreigenberg@outlook.com">Lsfreigenberg@outlook.com</a></p>
